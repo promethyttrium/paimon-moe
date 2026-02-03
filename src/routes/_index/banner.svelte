@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    columbina: {
-      name: 'Columbina',
+    neuvillette: {
+      name: 'Neuvillette',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    ineffa: {
-      name: 'Ineffa',
+    zibai: {
+      name: 'Zibai',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300094;
-  const image = 'columbina ineffa.png';
+  const bannerId = 300095;
+  const image = 'zibai neuvillette.png';
   const width = 800;
-  const height = 344;
+  const height = 402;
 
   let loading = true;
   let user = '';

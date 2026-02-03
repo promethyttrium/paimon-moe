@@ -6244,6 +6244,7 @@ export const characters = {
       boss: itemList.eroded_horn,
     },
     element: elements.geo,
+    new: true,
   },
   ineffa: {
     id: 'ineffa',
@@ -16443,5 +16444,6 @@ export const characters = {
       boss: itemList.ascended_sample_queen,
     },
     element: elements.geo,
+    new: true,
   },
 };
