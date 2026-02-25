@@ -276,7 +276,25 @@
     type = val;
     try {
       window.reloadAdSlots();
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
+    try {
+      const startAuction = () => {
+        adngin.queue.push(() => {
+          adngin.cmd.startAuction();
+        });
+      };
+      if (window.adngin && window.adngin.adnginLoaderReady) {
+        startAuction();
+        console.log('called startAuction()');
+      } else {
+        window.addEventListener('adnginLoaderReady', startAuction);
+        console.log("called window.addEventListener('adnginLoaderReady', startAuction)");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   onMount(async () => {

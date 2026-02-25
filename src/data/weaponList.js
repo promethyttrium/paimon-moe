@@ -18119,4 +18119,117 @@ export const weaponList = {
       },
     ],
   },
+  gest_of_the_mighty_wolf: {
+    id: 'gest_of_the_mighty_wolf',
+    name: 'Gest of the Mighty Wolf',
+    rarity: 5,
+    atk: 46,
+    secondary: 'CRIT Rate',
+    type: weapons.claymore,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_milk_tooth,
+            amount: 5,
+          },
+          {
+            item: itemList.fractured_eye_of_the_deep_shadow,
+            amount: 5,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_cracked_tooth,
+            amount: 5,
+          },
+          {
+            item: itemList.fractured_eye_of_the_deep_shadow,
+            amount: 18,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_cracked_tooth,
+            amount: 9,
+          },
+          {
+            item: itemList.aberrant_core_of_the_deep_shadow,
+            amount: 9,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_broken_fang,
+            amount: 5,
+          },
+          {
+            item: itemList.aberrant_core_of_the_deep_shadow,
+            amount: 18,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_broken_fang,
+            amount: 9,
+          },
+          {
+            item: itemList.hooked_beak_of_the_deep_shadow,
+            amount: 14,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_nostalgia,
+            amount: 6,
+          },
+          {
+            item: itemList.hooked_beak_of_the_deep_shadow,
+            amount: 27,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

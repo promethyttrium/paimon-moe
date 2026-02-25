@@ -2098,4 +2098,9 @@ export const itemList = {
     name: 'Hooked Beak of the Deep Shadow',
     rarity: 4,
   },
+  prismatic_severed_tail: {
+    id: 'prismatic_severed_tail',
+    name: 'Prismatic Severed Tail',
+    rarity: 4,
+  },
 };

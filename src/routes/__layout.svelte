@@ -32,9 +32,28 @@
   startClient();
 
   page.subscribe(() => {
+    if (typeof window === 'undefined') return;
     try {
       window.reloadAdSlots();
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
+    try {
+      const startAuction = () => {
+        adngin.queue.push(() => {
+          adngin.cmd.startAuction();
+        });
+      };
+      if (window.adngin && window.adngin.adnginLoaderReady) {
+        startAuction();
+        console.log('called startAuction()');
+      } else {
+        window.addEventListener('adnginLoaderReady', startAuction);
+        console.log("called window.addEventListener('adnginLoaderReady', startAuction)");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   });
 
   onMount(async () => {
@@ -136,7 +155,9 @@
     >
       <a class="text-gray-400 hover:text-primary" href="/privacy-policy">{$t('footer.link.privacyPolicy')}</a>
       <!-- svelte-ignore a11y-invalid-attribute -->
-      <a class="text-gray-400 hover:text-primary nn-cmp-show" href="#">{$t('footer.link.cookieSettings')}</a>
+      <a class="text-gray-400 hover:text-primary nn-cmp-show" href="#" onclick="adconsent('showGUI');">
+        {$t('footer.link.cookieSettings')}
+      </a>
     </div>
   </div>
 </div>
@@ -161,7 +182,9 @@
     width: 20%;
     height: 3px;
     background-color: #4e7cff;
-    box-shadow: 10px 0 20px 20px #4e7cff, -10px 0 20px 20px #4e7cff;
+    box-shadow:
+      10px 0 20px 20px #4e7cff,
+      -10px 0 20px 20px #4e7cff;
     animation: loading-bar 2s cubic-bezier(0.37, 0, 0.63, 1) infinite;
   }
 

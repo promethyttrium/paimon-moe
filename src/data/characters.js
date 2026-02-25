@@ -3048,7 +3048,6 @@ export const characters = {
       boss: itemList.mask_of_the_virtuous_doctor,
     },
     element: elements.hydro,
-    new: true,
   },
   cyno: {
     id: 'cyno',
@@ -6244,7 +6243,6 @@ export const characters = {
       boss: itemList.eroded_horn,
     },
     element: elements.geo,
-    new: true,
   },
   ineffa: {
     id: 'ineffa',
@@ -13831,6 +13829,152 @@ export const characters = {
     },
     element: elements.electro,
   },
+  varka: {
+    id: 'varka',
+    name: 'Varka',
+    rarity: 5,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 12613,
+      atk: 353,
+      def: 795,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 3,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.prismatic_severed_tail,
+            amount: 2,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 10,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.prismatic_severed_tail,
+            amount: 4,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 20,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.prismatic_severed_tail,
+            amount: 8,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 30,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.prismatic_severed_tail,
+            amount: 12,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 45,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.prismatic_severed_tail,
+            amount: 20,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 60,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.broken_drive_shaft, itemList.reinforced_drive_shaft, itemList.precision_drive_shaft],
+      book: [itemList.teachings_of_freedom, itemList.guide_to_freedom, itemList.philosophies_of_freedom],
+      boss: itemList.ascended_sample_rook,
+    },
+    element: elements.anemo,
+    new: true,
+  },
   venti: {
     id: 'venti',
     name: 'Venti',
@@ -16444,6 +16588,5 @@ export const characters = {
       boss: itemList.ascended_sample_queen,
     },
     element: elements.geo,
-    new: true,
   },
 };
