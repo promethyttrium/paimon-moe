@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    neuvillette: {
-      name: 'Neuvillette',
+    varka: {
+      name: 'Varka',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    zibai: {
-      name: 'Zibai',
+    flins: {
+      name: 'Flins',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300095;
-  const image = 'zibai neuvillette.png';
+  const bannerId = 300096;
+  const image = 'varka flins.webp';
   const width = 800;
-  const height = 402;
+  const height = 335;
 
   let loading = true;
   let user = '';
